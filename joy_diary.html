@@ -1,132 +1,277 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<html>
-	<head>
-		<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="templatemo">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Responsive Two Column Layout (Left Column Fluid)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    *, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
-header{
- background-color: #FFFFFF ;
- text-align:center;
-}
-body { margin: 0; }
+<title>JOY DIARY</title>
+<!--
+Stimulus Template
+http://www.templatemo.com/tm-498-stimulus
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
 
-.columnsContainer, footer, header { position: relative; margin: .5em; }
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 
-.leftColumn, .rightColumn, footer, header {  border: 1px solid  #ccc; padding: 1.25em; }
-
-.leftColumn { margin-bottom: .5em; }
-
-.nav {
-  list-style: none;
-  margin-left: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-.nav > li,
-.nav > li > a {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-}
-
-.inline-items {
-  margin-top: 0;
-}
-
-.inline-items li {
-  margin-left: 0;
-  border-left: 1px solid black;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.inline-items li:first-child {
-  margin-left: 0;
-  border: none;
-  padding-left: 0;
-  padding-right: 10px;
-}
-
-.inline-items li:last-child {
-  padding-right: 0;
-}
-
-/* MEDIA QUERIES */
-@media screen and (min-width: 47.5em ) {
-  .leftColumn { margin-right: 19.5em; }
-
-	.rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; }
-}
-    </style>
-  </head>
-
-  <body>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
 
-    <header>
+<!-- PRE LOADER -->
 
-    <img src = "joydiary/JoyDiary-01.png" alt = "joy diary logo sunshine and smily face" width = 60%>
-    </header>
+<div class="preloader">
+     <div class="spinner">
+          <span class="spinner-rotate"></span>
+     </div>
+</div>
 
-  	<div class="columnsContainer">
 
-	  	<div class="leftColumn">
-	  		<h2>What is Joy Diary</h2>
+<!-- Navigation Section -->
 
-	  		<p>Bacon ipsum dolor sit amet capicola ball tip beef ribs leberkas, turkey biltong salami shoulder ribeye. Leberkas chuck cow andouille kevin ribeye pork strip steak pork chop beef ribs beef ball tip corned beef. Leberkas prosciutto brisket, short ribs salami cow sirloin chicken. Bacon pork belly bresaola tenderloin biltong leberkas. Strip steak beef leberkas sirloin, venison turkey hamburger kevin. Drumstick chicken ground round t-bone flank fatback jerky ball tip. Jerky ribeye sirloin t-bone.</p>
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+     <div class="container">
 
-				<p>Tongue prosciutto pork ball tip ham hock, meatball sirloin brisket kielbasa biltong doner shoulder bresaola. Chuck beef ribs biltong, kielbasa ground round swine andouille corned beef. Venison hamburger tongue shank. Leberkas doner pork chop sausage kielbasa pancetta, biltong brisket pastrami tenderloin boudin filet mignon sirloin cow meatloaf. Ham ball tip bacon pork belly sirloin.</p>
+          <!-- navbar header -->
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <!--<a href="#" class="navbar-brand">JOY DIARY</a>-->
+          </div>
 
-				<p>Shoulder pig short ribs, salami chicken venison bresaola. Frankfurter meatball pork chop pork loin, turkey strip steak kielbasa pork belly drumstick shank prosciutto. Pork chicken ground round, sirloin tri-tip ham hock pork chop cow meatloaf pork loin bresaola turkey. Prosciutto hamburger pork short ribs flank tri-tip chicken pig bacon meatloaf t-bone shankle doner. Bresaola doner spare ribs biltong jowl boudin, tri-tip pork leberkas ham hock filet mignon.</p>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
 
-				<p>Leberkas strip steak shoulder meatball, flank biltong shank fatback ball tip swine prosciutto hamburger. Jerky frankfurter drumstick, ham ham hock hamburger kevin kielbasa salami chuck. Flank rump beef cow, beef ribs meatball ball tip jowl bacon pork chop. Biltong tongue pork chop hamburger. Frankfurter tri-tip pancetta pork chop venison t-bone andouille beef ribs salami boudin meatball doner spare ribs. Brisket pork chop pig kielbasa jerky chuck pork belly beef meatball boudin short loin. Doner jerky andouille ham meatloaf prosciutto kevin pork belly short loin pancetta.</p>
+                    <li><a href="#home" class="smoothScroll">Home</a></li>
+                    <li><a href="#about" class="smoothScroll">Privacy</a></li>
+                    <li><a href="#experience" class="smoothScroll">How To</a></li>
+                    
 
-				<p>Corned beef spare ribs hamburger pork tenderloin flank pork loin beef ribs sausage brisket chicken venison bacon short loin sirloin. Ribeye tail short ribs andouille kevin chicken shankle meatloaf, corned beef rump sirloin t-bone chuck tongue. Swine venison tongue, sirloin turducken drumstick bresaola strip steak rump. Kevin ham hock meatball tri-tip. Ground round leberkas pig beef salami strip steak meatball beef ribs. Chicken ball tip rump, short loin bresaola pork t-bone jerky jowl pork chop tail chuck sausage prosciutto.</p>
-	  	</div>
+               </ul>
+          </div>
 
-	  	<div class="rightColumn">
-	  		<h2>2 Right Column</h2>
+     </div>
+</div>
 
-	  		<p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
-	  	</div>
 
-  	</div>
-    <div class="columnsContainer">
+<!-- Home Section -->
 
-      <div class="leftColumn">
-        <h2>3 Left Column (fluid)</h2>
+<section id="home" class="parallax-section">
+     <div class="container">
+          <div class="row">
 
-        <p>Bacon ipsum dolor sit amet capicola ball tip beef ribs leberkas, turkey biltong salami shoulder ribeye. Leberkas chuck cow andouille kevin ribeye pork strip steak pork chop beef ribs beef ball tip corned beef. Leberkas prosciutto brisket, short ribs salami cow sirloin chicken. Bacon pork belly bresaola tenderloin biltong leberkas. Strip steak beef leberkas sirloin, venison turkey hamburger kevin. Drumstick chicken ground round t-bone flank fatback jerky ball tip. Jerky ribeye sirloin t-bone.</p>
+               <div class="col-md-6 col-sm-6">
+                    <div class="home-img"></div>
+               </div>
 
-        <p>Tongue prosciutto pork ball tip ham hock, meatball sirloin brisket kielbasa biltong doner shoulder bresaola. Chuck beef ribs biltong, kielbasa ground round swine andouille corned beef. Venison hamburger tongue shank. Leberkas doner pork chop sausage kielbasa pancetta, biltong brisket pastrami tenderloin boudin filet mignon sirloin cow meatloaf. Ham ball tip bacon pork belly sirloin.</p>
+               <div class="col-md-6 col-sm-6">
+                    <div class="home-thumb">
+                         <div class="section-title">
+                              <h3 class="wow fadeInUp" data-wow-delay="0.3s">Welcome to Joy Diary, </h3>
+                              <h1 class="wow fadeInUp" data-wow-delay="0.6s">Your New Gratitude Journal Experience.</h1>
+                              <p class="wow fadeInUp" data-wow-delay="0.9s">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id accumsan quam.</p>
 
-        <p>Shoulder pig short ribs, salami chicken venison bresaola. Frankfurter meatball pork chop pork loin, turkey strip steak kielbasa pork belly drumstick shank prosciutto. Pork chicken ground round, sirloin tri-tip ham hock pork chop cow meatloaf pork loin bresaola turkey. Prosciutto hamburger pork short ribs flank tri-tip chicken pig bacon meatloaf t-bone shankle doner. Bresaola doner spare ribs biltong jowl boudin, tri-tip pork leberkas ham hock filet mignon.</p>
 
-        <p>Leberkas strip steak shoulder meatball, flank biltong shank fatback ball tip swine prosciutto hamburger. Jerky frankfurter drumstick, ham ham hock hamburger kevin kielbasa salami chuck. Flank rump beef cow, beef ribs meatball ball tip jowl bacon pork chop. Biltong tongue pork chop hamburger. Frankfurter tri-tip pancetta pork chop venison t-bone andouille beef ribs salami boudin meatball doner spare ribs. Brisket pork chop pig kielbasa jerky chuck pork belly beef meatball boudin short loin. Doner jerky andouille ham meatloaf prosciutto kevin pork belly short loin pancetta.</p>
+                         </div>
+                    </div>
+               </div>
 
-        <p>Corned beef spare ribs hamburger pork tenderloin flank pork loin beef ribs sausage brisket chicken venison bacon short loin sirloin. Ribeye tail short ribs andouille kevin chicken shankle meatloaf, corned beef rump sirloin t-bone chuck tongue. Swine venison tongue, sirloin turducken drumstick bresaola strip steak rump. Kevin ham hock meatball tri-tip. Ground round leberkas pig beef salami strip steak meatball beef ribs. Chicken ball tip rump, short loin bresaola pork t-bone jerky jowl pork chop tail chuck sausage prosciutto.</p>
-      </div>
 
-      <div class="rightColumn">
-        <h2> 4 Right Column</h2>
+          </div>
+     </div>
+</section>
 
-        <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.</p>
-      </div>
 
-    </div>
+<!-- About Section -->
 
-    <footer>
-  		<p><a href="#">Contact Us</a> | <a href="#">Sitemap</a> | <a href="#">Privacy Policy</a></p>
-  		<p>&copy;2014 Copyright info here...</p>
-  	</footer>
+<section id="about" class="parallax-section">
+     <div class="container">
+          <div class="row">
 
-  </body>
+               <div class="col-md-6 col-sm-12">
+                    <div class="about-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
+                              <h1>Donec auctor</h1>
+                              <p class="color-yellow">Sed vulputate vitae diam quis bibendum</p>
+                         </div>
+                         <div class="wow fadeInUp" data-wow-delay="0.8s">
+                              <p>Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem. Mauris convallis eros massa.</p>
+                              <p>Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam bibendum, sem nibh mollis erat, quis porta odio odio at velit.</p>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="background-image about-img"></div>
+               </div>
+
+               <div class="col-md-3 col-sm-6">
+                    <div class="background-image about-img"></div>
+               </div>
+
+
+          </div>
+     </div>
+</section>
+
+
+
+
+<!-- Experience Section -->
+
+<section id="experience" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="background-image experience-img"></div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="color-white experience-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                              <h1>My Experiences</h1>
+                              <p class="color-white">Previous companies and my tasks</p>
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Graphic Designer <small>2014 Jul - 2015 Sep</small></h3>
+                                   <p class="color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                              </div>
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Web Designer <small>2015 Oct - 2017 Jan</small></h3>
+                                   <p class="color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Education Section -->
+
+<section id="education" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="color-white education-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                              <h1>My Education</h1>
+                              <p class="color-white">In cursus orci non ipsum gravida dignissim</p>
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Master in Design <small>2012 Jan - 2014 May</small></h3>
+                                   <p class="color-white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque. </p>
+                              </div>
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-laptop"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Bachelor of Arts <small>2008 May - 2011 Dec</small></h3>
+                                   <p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                              </div>
+                         </div>
+
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="background-image education-img"></div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Quotes Section -->
+
+<section id="quotes" class="parallax-section">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.8s">Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci.</h2>
+                    <p class="wow fadeInUp" data-wow-delay="1s">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+<!-- Contact Section -->
+
+
+
+<!-- Footer Section -->
+
+<footer>
+	<div class="container">
+		<div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
+                         <p>Copyright &copy; Talking Tools 2019
+
+                    |  <a href="https://Talkingtools.nz" target="_parent">Find Out More</a></p>
+                    </div>
+				<ul class="wow fadeInUp social-icon" data-wow-delay="2s">
+                         <li><a href="#" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-google-plus"></a></li>
+                         <li><a href="#" class="fa fa-dribbble"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+
+		</div>
+	</div>
+</footer>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
 </html>
