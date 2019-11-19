@@ -70,7 +70,7 @@ strong {
 }
 
 p {
-    color: #888;
+    color: #000;
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
@@ -356,8 +356,9 @@ a:hover, a:active, a:focus {
   padding-left: 0;
 }
 
+
 #home .home-img {
-  background: url('../images/home-img.jpg') no-repeat;
+  /*background: url('../images/home-img.jpg') no-repeat;*/
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
@@ -365,6 +366,43 @@ a:hover, a:active, a:focus {
 }
 
 #home .home-thumb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 45px 0 45px;
+}
+
+/*---------------------------------------
+    TALKING TOOLs home page
+-----------------------------------------*/
+
+#homeTalkingTools h1 {
+  padding-bottom: 18px;
+}
+
+#homeTalkingTools .col-md-6 {
+  background: #ff00d7;
+/* light blue color: #c3eafd; */
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+#homeTalkingTools .home-img {
+  background: url('../images/home-img.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100vh;
+}
+
+#homeTalkingTools .home-thumb {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
